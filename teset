@@ -1,0 +1,14 @@
+from pygame import*
+
+screen = display.set_mode((1000,700))
+
+running=True
+
+while running:
+    for evnt in event.get():                # checks all events that happen
+        if evnt.type == QUIT:
+            running = False
+
+    for x in range(0,1000):
+        for y in range(0,700):
+            screen.set_pixel((111,255,111))
